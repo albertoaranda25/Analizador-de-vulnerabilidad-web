@@ -3,7 +3,7 @@ Analizador de vulnerabilidad. Utilizando Raw Sockets y análisis de tráfico 802
 
 # 📡 OWISAM-DS: Simulador Pasivo de Ataques de Desautenticación (802.11)
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-EUSA-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 ![Platform](https://img.shields.io/badge/platform-Linux-lightgrey.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)
