@@ -1,7 +1,7 @@
 # Analizador-de-vulnerabilidad-web
 Analizador de vulnerabilidad. Utilizando Raw Sockets y análisis de tráfico 802.11 para detectar la ausencia del protocolo de protección 802.11w (MFP).
 
-# 📡 OWISAM-DS: Simulador Pasivo de Ataques de Desautenticación (802.11)
+# 📡 OWISAM: Analizador de vulnerabilidad web (802.11)
 
 ![License](https://img.shields.io/badge/license-EUSA-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
@@ -10,7 +10,7 @@ Analizador de vulnerabilidad. Utilizando Raw Sockets y análisis de tráfico 802
 
 ## 📖 Descripción del proyecto
 
-Este proyecto es una herramienta de auditoría de seguridad Wi-Fi desarrollada **completamente desde cero** (sin el uso de suites de terceros como Aircrack-ng, Scapy, etc.). Su objetivo principal es cumplir con los requisitos de la metodología **OWISAM-DS (Pruebas de denegación de servicio)**.
+Este proyecto es una herramienta de auditoría de seguridad Wi-Fi desarrollada sin el uso de suites de terceros como Aircrack-ng, Scapy, etc. Su objetivo principal es cumplir con los requisitos de la metodología **OWISAM-DS (Pruebas de denegación de servicio)**.
 
 A diferencia de las herramientas ofensivas tradicionales que interrumpen el servicio de forma activa, esta herramienta actúa como un **analizador de vulnerabilidad pasivo**. Utilizando **Raw Sockets** y análisis de tráfico 802.11 a nivel de bit, el software inspecciona las tramas de gestión (Beacon frames) de las redes cercanas para detectar la presencia o ausencia del protocolo de protección **802.11w (Management Frame Protection - MFP)**. 
 
@@ -35,10 +35,10 @@ Dado que el proyecto no posee dependencias externas ni librerías de terceros, l
 
 ```zsh
 # 1. Clonar el repositorio
-git clone [https://github.com/tu-usuario/owisam-ds-simulator.git](https://github.com/tu-usuario/owisam-ds-simulator.git)
+git clone https://github.com/albertoaranda25/Analizador-de-vulnerabilidad-web.git
 
 # 2. Acceder al directorio del proyecto
-cd owisam-ds-simulator
+cd ruta-provisional
 
 # 3. Dar permisos de ejecución al script principal
-chmod +x owisam_simulator.py
+chmod +x archivo-provicional.py
