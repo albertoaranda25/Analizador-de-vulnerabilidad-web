@@ -4,13 +4,14 @@ import sys
 # Importamos nuestros módulos personalizados
 from core.raw_sockets import RawSocketManager
 from parsers.dot11_parser import Dot11Parser
+from parsers.rsn_analyzer import RSNAnalyzer  # <-- NUEVA IMPORTACIÓN
 
 def test_parser():
-    """Función de laboratorio para probar el parser sin tarjeta de red."""
+    """Función de laboratorio para probar el parser y el análisis RSN sin antena."""
     print("[*] Ejecutando test de laboratorio (Sin antena)...")
     
-    # Esto es una trama Beacon real convertida a bytes.
-    # Contiene la cabecera Radiotap, un BSSID y un SSID llamado "Mi_Wifi_Test"
+    # Esta es una trama Beacon más completa. Incluye el Tag 0 (SSID) y el Tag 48 (RSN).
+    # En este RSN, los bits de MFP están a 0 (Vulnerable).
     mock_packet = bytes.fromhex(
         "000012002e48000000028509a000c0000000" # Radiotap (18 bytes)
         "80000000"                             # Frame Control y Duración
@@ -19,7 +20,8 @@ def test_parser():
         "112233445566"                         # BSSID (Router MAC)
         "0000"                                 # Seq Control
         "000000000000000000000000"             # Parámetros fijos (12 bytes)
-        "000c4d695f576966695f54657374"         # Tag 0 (SSID: "Mi_Wifi_Test", longitud 12)
+        "000c4d695f576966695f54657374"         # Tag 0 (SSID: "Mi_Wifi_Test")
+        "30140100000fac040100000fac040100000fac020000" # Tag 48 (RSN Vulnerable)
     )
     
     resultado = Dot11Parser.parse_beacon(mock_packet)
@@ -28,6 +30,18 @@ def test_parser():
         print(f"[+] ¡Éxito! Trama parseada correctamente.")
         print(f"    - BSSID Encontrado: {resultado['bssid']}")
         print(f"    - SSID Encontrado:  {resultado['ssid']}")
+        
+        # --- NUEVA PRUEBA DE VULNERABILIDAD ---
+        analisis = RSNAnalyzer.analyze_mfp(resultado['raw_tags'])
+        
+        print("\n[*] --- RESULTADO AUDITORÍA OWISAM ---")
+        if analisis['vulnerable']:
+            print(f"    [!] ¡VULNERABLE! La red puede sufrir un ataque de Deauth.")
+            print(f"    [!] Motivo: {analisis['status']}")
+        else:
+            print(f"    [+] RED SEGURA. Resistente a ataques de Deauth.")
+            print(f"    [+] Motivo: {analisis['status']}")
+            
     else:
         print("[-] Fallo al parsear la trama.")
 
