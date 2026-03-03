@@ -9,7 +9,7 @@
 
 Este proyecto es una herramienta de auditoría de seguridad Wi-Fi desarrollada sin el uso de suites de terceros como Aircrack-ng, Scapy, etc. Su objetivo principal es cumplir con los requisitos de la metodología **OWISAM-DS (Pruebas de denegación de servicio)**.
 
-A diferencia de las herramientas ofensivas tradicionales que interrumpen el servicio de forma activa, esta herramienta actúa como un **analizador de vulnerabilidad pasivo**. Utilizando **Raw Sockets** y análisis de tráfico 802.11 a nivel de bit, el software inspecciona las tramas de gestión (Beacon frames) de las redes cercanas para detectar la presencia o ausencia del protocolo de protección **802.11w (Management Frame Protection - MFP)**. 
+A diferencia de las herramientas ofensivas tradicionales que interrumpen el servicio de forma activa, esta herramienta actúa como un **analizador de vulnerabilidad pasivo**. Utilizando **Raw Sockets** y análisis de tráfico 802.11 a nivel de bit, el software inspecciona las tramas de gestión (Beacon frames) de las redes cercanas para detectar la presencia o ausencia del protocolo de protección **802.11w (Management Frame Protection - MFP)**.
 
 El resultado es una **simulación matemática** que evalúa la resistencia de la red frente a ataques DoS y calcula el número de Puntos de Acceso (APs) y clientes que se verían afectados en un escenario real, todo ello sin generar ningún impacto en entornos de producción.
 
