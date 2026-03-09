@@ -2,6 +2,7 @@ import argparse
 import sys
 import time
 from utils.display import Display
+from utils.helpers import ReportGenerator
 
 # Importamos nuestros módulos personalizados
 from core.raw_sockets import RawSocketManager
@@ -23,11 +24,22 @@ def test_parser():
     resultado = Dot11Parser.parse_beacon(mock_packet)
     if resultado:
         print(f"[+] ¡Éxito! BSSID: {resultado['bssid']} | SSID: {resultado['ssid']}")
+        
+        # 1. PRIMERO calculamos el análisis
         analisis = RSNAnalyzer.analyze_mfp(resultado['raw_tags'])
         print(f"[*] Resultado OWISAM: {analisis['status']} -> Vulnerable: {analisis['vulnerable']}")
+        
+        # 2. DESPUÉS empaquetamos los datos y generamos el informe
+        redes_simuladas = {
+            resultado['bssid']: {
+                'ssid': resultado['ssid'], 
+                'vulnerable': analisis['vulnerable'], 
+                'status': analisis['status']
+            }
+        }
+        ReportGenerator.export_to_json(redes_simuladas, "test_report.json")
     else:
         print("[-] Fallo al parsear la trama.")
-
 
 def main():
 
@@ -106,6 +118,10 @@ def main():
         
         print("\n[*] Auditoría finalizada.")
         print(f"[*] Total de redes únicas descubiertas: {len(redes_descubiertas)}")
+        
+        # 5. Guardar informe automáticamente
+        if not args.test:  # Evitamos crear archivos basura cuando solo hacemos el --test rápido
+            ReportGenerator.export_to_json(redes_descubiertas)
 
 if __name__ == "__main__":
     main()
