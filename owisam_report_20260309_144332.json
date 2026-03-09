@@ -1,0 +1,542 @@
+{
+    "02:8D:DB:6D:54:29": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:AA:5F": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:AA:5F": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:AA:5F": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:AA:5F": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6E:47:35": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:55:DB": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:55:DB": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:55:DB": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:55:DB": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:98:CB:38": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:55:FC": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:55:FC": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:61:56:C8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "94:BF:C4:27:20:D8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:BC:53:38": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:18:6C:E8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:98:6C:E8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:68:D2:2A": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:68:D2:2A": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6E:47:35": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6E:47:35": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6E:47:35": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:55:FC": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "94:BF:C4:67:20:D8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:3C:53:38": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "32:8D:DB:68:D2:2A": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:18:CB:38": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "0C:8D:DB:6D:54:29": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:98:C9:28": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "44:3B:14:2D:2A:38": {
+        "ssid": "MOVISTAR-WIFI6-2A38",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:1D:3E:08": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "B4:79:C8:9D:3E:08": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:5D:3E:08": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:19:58:B8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:99:58:B8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:1D:3A:E8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "B4:79:C8:9D:3A:E8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:3C:73:C8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:BC:73:C8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:7C:73:C8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:68:BE:90": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "04:BA:D6:ED:4D:C0": {
+        "ssid": "AudiovisualesCCS",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:68:BE:90": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:51:82": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1E:8D:DB:6D:51:82": {
+        "ssid": "WIFI_AULA23",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:51:82": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:55:D7": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:55:D7": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:68:BE:90": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:55:D7": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:55:D7": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:68:BE:90": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "60:45:E8:5D:93:78": {
+        "ssid": "Livebox6-9379",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "76:D6:37:F7:2F:FE": {
+        "ssid": "\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:1B:AB:08": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "B4:79:C8:9B:AB:08": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:21:40:48": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:A1:40:48": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:1B:9E:38": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "B4:79:C8:5B:AB:08": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:9B:9E:38": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:9B:8D:F8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:A1:5A:48": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:21:5A:48": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:61:5A:18": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:54:10": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:54:10": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:55:F8": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:55:F8": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:55:F8": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:55:F8": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:68:CF:5B": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:54:10": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:54:10": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "0C:8D:DB:6D:54:5B": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:6D:54:29": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:68:D2:2A": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:58:6C:E8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:58:CB:38": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:55:FC": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:A1:56:C8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:21:5E:E8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:61:5E:E8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:61:40:48": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:1B:8D:F8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:61:5A:48": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "EC:58:EA:9B:15:08": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:9D:07:18": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "EC:58:EA:1B:15:08": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "0C:8D:DB:68:CF:5B": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:68:CF:5B": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "32:8D:DB:68:CF:5B": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:21:5A:18": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "06:8D:DB:6D:54:5B": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:A1:5A:18": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:18:C9:28": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "1C:3A:60:19:02:A8": {
+        "ssid": "ASK4 WiFi",
+        "vulnerable": true,
+        "status": "Vulnerable (Red Abierta o antigua)"
+    },
+    "B6:AE:EB:BA:1B:A7": {
+        "ssid": "Redmi Note 12",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:7C:53:38": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:54:29": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:5D:3A:E8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "A2:14:D5:B9:E5:BA": {
+        "ssid": "Internet Alberto",
+        "vulnerable": true,
+        "status": "Parcial (MFP Soportado pero no forzado)"
+    },
+    "0C:8D:DB:6D:54:33": {
+        "ssid": "CAMPUSCAMARA",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "06:8D:DB:6D:54:33": {
+        "ssid": "ssid_admin",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "B4:79:C8:5B:8D:F8": {
+        "ssid": "ASK4 WiFi (802.1x)",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "1C:3A:60:A1:5E:E8": {
+        "ssid": "Admin Youniq Sevilla",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    },
+    "02:8D:DB:6D:55:E9": {
+        "ssid": "",
+        "vulnerable": true,
+        "status": "Vulnerable (MFP No Soportado)"
+    }
+}
