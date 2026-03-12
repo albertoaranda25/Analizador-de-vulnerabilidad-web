@@ -94,16 +94,20 @@ def main():
                         bssid = datos_beacon['bssid']
                         ssid = datos_beacon['ssid']
                         tags = datos_beacon['raw_tags']
+
+                        # Recogemos el canal del parser (si no lo encuentra, ponemos '?')
+                        canal = datos_beacon.get('channel', '?')
                 
                         analisis = RSNAnalyzer.analyze_mfp(tags)
                 
                         redes_descubiertas[bssid] = {
                             'ssid': ssid,
+                            'channel': canal,
                             'vulnerable': analisis['vulnerable'],
                             'status': analisis['status']
                         }
                 
-                        Display.print_network_row(bssid, ssid, analisis['status'], analisis['vulnerable'])
+                        Display.print_network_row(bssid, canal, ssid, analisis['status'], analisis['vulnerable'])
 
             except KeyboardInterrupt:
                 print("\n[!] Escaneo interrumpido por el usuario (Ctrl+C).")

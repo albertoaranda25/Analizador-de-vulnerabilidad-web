@@ -27,12 +27,15 @@ class Display:
     @staticmethod
     def print_table_header():
         """Imprime la cabecera de la tabla de resultados."""
-        print(f"{Display.BOLD}{'BSSID':<19} | {'SSID':<25} | {'ESTADO MFP / VULNERABILIDAD'}{Display.RESET}")
-        print("-" * 80)
+        print(f"{Display.BOLD}{'BSSID':<19} | {'CH':<4} | {'SSID':<25} | {'ESTADO MFP / VULNERABILIDAD'}{Display.RESET}")
+        print("-" * 87)
 
     @staticmethod
-    def print_network_row(bssid: str, ssid: str, status: str, is_vulnerable: bool):
+    def print_network_row(bssid: str, canal: str, ssid: str, status: str, is_vulnerable: bool):
         """Imprime una fila de la tabla con los colores adecuados."""
+        # Convertimos el canal a string por si nos llega como un número entero
+        ch_str = str(canal)
+        
         # Recortamos el SSID si es muy largo para que no rompa la tabla (máximo 24 chars)
         ssid_display = ssid[:24] + (ssid[24:] and '…') 
         
@@ -41,4 +44,5 @@ class Display:
         else:
             vuln_text = f"{Display.GREEN}{Display.BOLD}[SEGURO] {status}{Display.RESET}"
             
-        print(f"{bssid:<19} | {ssid_display:<25} | {vuln_text}")
+        # Añadimos la columna del canal (ch_str:<4) justo después del BSSID
+        print(f"{bssid:<19} | {ch_str:<4} | {ssid_display:<25} | {vuln_text}")

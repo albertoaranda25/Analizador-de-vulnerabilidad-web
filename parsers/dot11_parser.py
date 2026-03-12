@@ -14,7 +14,7 @@ class Dot11Parser:
         # Los bytes 2 y 3 (índices 2:4) indican su tamaño exacto en formato Little-Endian.
         if len(packet) < 4:
             return None
-            
+        
         radiotap_len = struct.unpack('<H', packet[2:4])[0]
         
         # Recortamos el paquete para quedarnos solo con la trama 802.11 real
@@ -47,27 +47,36 @@ class Dot11Parser:
         # (Timestamp, Intervalo, Capacidades). Los "Tags" empiezan en el byte 36.
         tags_data = dot11_frame[36:]
         
-        ssid = "<Oculto>"
+        # Inicializamos las variables por si algún paquete viene corrupto o incompleto
+        ssid = "<Red Oculta>"
+        canal = "?"
         pos = 0
-        
+
         # Bucle para leer los Tags (Etiquetas)
         while pos < len(tags_data) - 1:
-            tag_num = tags_data[pos]       # Qué información es (0 = SSID, 48 = RSN)
+            tag_num = tags_data[pos]       # Qué información es (0 = SSID, 3 = Canal, 48 = RSN)
             tag_len = tags_data[pos + 1]   # Cuánto ocupa esa información
             pos += 2                       # Avanzamos a los datos reales
             
-            # Si el Tag es el 0, hemos encontrado el SSID
+            # 1. Si el Tag es el 0, hemos encontrado el SSID
             if tag_num == 0:
                 try:
-                    ssid = tags_data[pos : pos + tag_len].decode('utf-8', errors='ignore')
+                    if tag_len > 0: # Para evitar errores si el nombre está vacío (Red oculta)
+                        ssid = tags_data[pos : pos + tag_len].decode('utf-8', errors='ignore')
                 except:
                     pass
-                break # Ya tenemos el nombre, salimos del bucle
                 
-            pos += tag_len # Saltamos al siguiente Tag
+            # 2. NUEVO: Si el Tag es el 3, hemos encontrado el Canal (DS Parameter Set)
+            elif tag_num == 3:
+                # El canal ocupa exactamente 1 byte, lo leemos directamente
+                if tag_len == 1:
+                    canal = tags_data[pos]
+                    
+            pos += tag_len # Saltamos al siguiente Tag (sumamos la longitud de los datos actuales)
 
         return {
             "bssid": bssid,
             "ssid": ssid,
+            'channel': canal,
             "raw_tags": tags_data # Guardamos el resto de tags para analizarlos luego (802.11w)
         }
