@@ -1,0 +1,15 @@
+# Python - Archivos compilados y temporales
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales (por si usas alguno en el futuro)
+venv/
+env/
+
+# VS Code - Configuraciones locales
+.vscode/
+
+# Archivos de log o reportes locales que no quieres en la nube
+*.json
+*.log
