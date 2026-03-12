@@ -9,9 +9,12 @@
 
 Este proyecto es una herramienta de auditoría de seguridad Wi-Fi desarrollada sin el uso de suites de terceros como Aircrack-ng, Scapy, etc. Su objetivo principal es cumplir con los requisitos de la metodología **OWISAM-DS (Pruebas de denegación de servicio)**.
 
-A diferencia de las herramientas ofensivas tradicionales que interrumpen el servicio de forma activa, esta herramienta actúa como un **analizador de vulnerabilidad pasivo**. Utilizando **Raw Sockets** y análisis de tráfico 802.11 a nivel de bit, el software inspecciona las tramas de gestión (Beacon frames) de las redes cercanas para detectar la presencia o ausencia del protocolo de protección **802.11w (Management Frame Protection - MFP)**.
+La herramienta opera en dos fases diferenciadas:
 
-El resultado es una **simulación matemática** que evalúa la resistencia de la red frente a ataques DoS y calcula el número de Puntos de Acceso (APs) y clientes que se verían afectados en un escenario real, todo ello sin generar ningún impacto en entornos de producción.
+1. **Análisis Pasivo:** Utilizando Raw Sockets y análisis de tráfico 802.11 a nivel de bit, inspecciona las tramas de gestión (Beacon frames) para extraer el BSSID, SSID, el Canal de operación y detectar la presencia o ausencia del protocolo de protección **802.11w (Management Frame Protection - MFP)**.
+2. **Explotación Activa (Simulación DoS):** Permite aislar el canal específico de un objetivo vulnerable y lanzar ráfagas de desautenticación (Deauth) dirigidas para evaluar la resistencia real de la red frente a interrupciones de servicio.
+
+Todo ello se consolida en reportes estructurados (JSON), proporcionando una visión clara del impacto en un entorno real.
 
 ---
 
@@ -20,22 +23,33 @@ El resultado es una **simulación matemática** que evalúa la resistencia de la
 Para ejecutar esta herramienta, el sistema debe cumplir con los siguientes requisitos físicos y de software:
 
 * **Sistema Operativo:** Distribución basada en GNU/Linux (Kali, Ubuntu, Debian, Parrot, etc.).
-* **Hardware:** Tarjeta de red inalámbrica compatible con **Modo Monitor** (chipsets recomendados: Atheros, Ralink, Realtek).
-* **Lenguaje:** Python 3.8 o superior (usando únicamente librerías estándar nativas: `socket`, `struct`, `os`).
-* **Permisos:** Privilegios de superusuario (`root`) para la apertura de Raw Sockets y el cambio de estado de la interfaz de red.
+* **Hardware:** Tarjeta de red inalámbrica compatible con **Modo Monitor** e inyección de paquetes (chipsets recomendados: Atheros, Ralink, Realtek).
+* **Lenguaje:** Python 3.8 o superior.
+* **Permisos:** Privilegios de superusuario (`root`) para la apertura de Raw Sockets, inyección de paquetes y el cambio de estado de la interfaz de red.
 
 ---
 
-## 🚀 Guía de instalación
+## 🚀 Guía de instalación y uso
 
-Dado que el proyecto no posee dependencias externas ni librerías de terceros, la instalación consiste únicamente en clonar el repositorio y preparar la interfaz de red.
+Dado que el proyecto está diseñado para ser autónomo, la instalación consiste únicamente en clonar el repositorio y preparar la interfaz de red.
 
 ```zsh
 # 1. Clonar el repositorio
-git clone https://github.com/albertoaranda25/Analizador-de-vulnerabilidad-web.git
+git clone [https://github.com/albertoaranda25/Analizador-de-vulnerabilidad-web.git](https://github.com/albertoaranda25/Analizador-de-vulnerabilidad-web.git)
 
 # 2. Acceder al directorio del proyecto
-cd ruta-provisional
+cd Analizador-de-vulnerabilidad-web
 
 # 3. Dar permisos de ejecución al script principal
-chmod +x archivo-provicional.py
+chmod +x owisam_simulator.py
+
+# 4. Poner tu tarjeta de red en Modo Monitor (Sustituye 'wlan0' por tu interfaz)
+sudo ip link set wlan0 down
+sudo iw dev wlan0 set type monitor
+sudo ip link set wlan0 up
+
+# (Alternativa rápida si tienes la suite aircrack instalada)
+# sudo airmon-ng start wlan0
+
+# 5. Ejecutar la herramienta (requiere permisos de root)
+sudo python3 owisam_simulator.py
