@@ -44,9 +44,13 @@ cd Analizador-de-vulnerabilidad-web
 chmod +x owisam_simulator.py
 
 # 4. Poner tu tarjeta de red en Modo Monitor (Sustituye 'wlan0' por tu interfaz)
+
 sudo ip link set wlan0 down
 sudo iw dev wlan0 set type monitor
 sudo ip link set wlan0 up
+sudo systemctl restart NetworkManager
+sudo airmon-ng check kill
+sudo airmon-ng start wlan0
 
 # (Alternativa rápida si tienes la suite aircrack instalada)
 # sudo airmon-ng start wlan0

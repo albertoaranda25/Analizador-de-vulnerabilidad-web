@@ -5,7 +5,7 @@ class DeauthAttacker:
     """Clase para ejecutar pruebas de concepto de Denegación de Servicio (Deauth)."""
 
     @staticmethod
-    def start_attack(interface: str, bssid: str, client: str = "FF:FF:FF:FF:FF:FF", count: int = 50):
+    def start_attack(interface: str, bssid: str, client: str = "BC:6E:E2:39:79:C5", count: int = 50):
         """
         Construye y envía ráfagas de paquetes de desautenticación.
         
