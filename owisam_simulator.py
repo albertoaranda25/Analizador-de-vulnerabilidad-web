@@ -145,7 +145,7 @@ def main():
                 print("[\033[93m!\033[0m] Advertencia: Canal no válido. El ataque fallará si no estás en el canal correcto.")
             
             # Lanzamos el ataque
-            DeauthAttacker.start_attack(interface=interfaz, bssid=bssid, count=300)
+            DeauthAttacker.start_attack(interface=interfaz, bssid=bssid, client="BC:6E:E2:39:79:C5")
             input("\n[Pausa] Pulsa Enter para volver al menú principal...")
 
         elif opcion == '4':
