@@ -45,15 +45,20 @@ chmod +x owisam_simulator.py
 
 # 4. Poner tu tarjeta de red en Modo Monitor (Sustituye 'wlan0' por tu interfaz)
 
-sudo ip link set wlan0 down
-sudo iw dev wlan0 set type monitor
-sudo ip link set wlan0 up
-sudo systemctl restart NetworkManager
+# 4.1. Matamos los procesos que molestan ANTES de hacer nada
 sudo airmon-ng check kill
-sudo airmon-ng start wlan0
 
-# (Alternativa rápida si tienes la suite aircrack instalada)
-# sudo airmon-ng start wlan0
+# 4.2. Apagamos el ahorro de energía en la interfaz original
+sudo iw dev wlan0 set power_save off
+
+# 4.3. Tiramos la interfaz abajo
+sudo ip link set wlan0 down
+
+# 4.4. Cambiamos su modo a monitor (¡sin cambiarle el nombre!)
+sudo iw dev wlan0 set type monitor
+
+# 4.5. La volvemos a levantar
+sudo ip link set wlan0 up
 
 # 5. Ejecutar la herramienta (requiere permisos de root)
 sudo python3 owisam_simulator.py
